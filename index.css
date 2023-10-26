@@ -1,0 +1,83 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+.subsection {
+  flex: 1;
+  padding: 10px;
+  height:450px;
+}
+
+.modal-section {
+  padding: 10px;
+}
+
+.container {
+      display: flex; /* Use flexbox to create a flexible container */
+}
+.custom-colour {
+  color: #fcca00;
+}
+.custom-background-colour {
+    background-color: #fcca00;
+}
+.link-bar {
+  background-color: #000000;
+}
+.bold-text {
+  font-weight: bold;
+}
+.small-nav {
+  background-color: #fcca00;
+}
+
+#modalContainer {
+  display: none; /* Hide the modal container by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Ensure the modal appears on top of other elements */
+}
+
+#modalContent {
+  background-color: #fff;
+  background-image:url('abstract.jpg');
+  max-width: 550px;
+  margin: 50px auto; /* Adjust the margin to center the modal vertically and horizontally */
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.register-button {
+  margin-top:7px;
+  height: 35px;
+  border:none;
+  display:inline-block;
+  padding-top:8px;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.form-grid {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap:10px;
+  margin-left:60px;
+}
+
+.subsection-justify {
+  text-align:justify;
+  margin-left:30px;
+  margin-right:30px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Carbon Easy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large custom-background-colour" >
+    <a class="w3-bar-item link-bar w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-opacity">Homepage</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">About Us</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">News</a>
+    <a href="#" class="w3-bar-item w3-hide-small w3-right"><form action="/search" method="GET">
+      <input type="text" name="query" placeholder="Search webpage...">
+      <button type="submit" class="w3-hover-black">Search</button>
+    </form>
+    </a>
+    <button id="trigger-modal" class="button w3-hover-black w3-card custom-background-colour w3-right bold-text" style="border-radius: 30px; margin-top:8px; padding-right:10px; padding-left:10px;">Registration</button>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:60px 10px; background-image: url('abstract4.jpg'); color: black;">
+  <img src="logo.png" alt="logo" style="width:425px; height:250px;"><br>
+<button class="w3-button w3-hover-black w3-card custom-background-colour w3-margin w3-padding-large w3-xlarge" style="border-radius: 10px; font-weight:bold; background-color: #ffb414;">CALCULATE CARBON FOOTPRINT</button>
+
+</header>
+
+<!-- Modal Container -->
+<div id="modalContainer" class="w3-animate-opacity w3-card">
+  <div id="modalContent">
+    <button id="closeModalBtn"> X </button>
+    <div class="modal-section w3-margin w3-center custom-background-colour w3-card" style="border-radius: 30px;">
+      <h1 class="w3-xxlarge bold-text">Registration Form</h1>
+    </div>
+    <div id="form-ct">
+      <div id="userInfo" class="modal-section custom-background-colour w3-margin w3-center w3-card" style="border-radius: 30px;">
+        <form class="w3-center form-grid">
+          <label for="gname" class="bold-text">Given name:</label>
+          <input type="text" id="gname" name="gname" placeholder="Enter given name(s)..."><br>
+          <label for="sname" class="bold-text">Surname:</label>
+          <input type="text" id="sname" name="sname" placeholder="Enter surname..."><br>
+          <label for="username" class="bold-text">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter username..."><br>
+          <label for="password" class="bold-text">Password:</label>
+          <input type="text" id="password" name="password" placeholder="Enter password..."><br>
+        </form>
+      </div>
+      <div id="addressInfo" class="modal-section w3-margin custom-background-colour w3-center w3-card" style="border-radius: 30px;">
+      <form class=" w3-center form-grid">
+        <label for="homead" class="bold-text">Home Address:</label>
+        <input type="text" id="homead" name="homead" placeholder="Enter home address..."><br>
+        <label for="workad" class="bold-text">Work Address:</label>
+        <input type="text" id="workad" name="workad" placeholder="Enter work address..."><br>
+      </form>
+      </div>
+      <div id="contactInfo" class="modal-section w3-margin custom-background-colour w3-center w3-card" style="border-radius: 30px;">
+      <form class="w3-center form-grid">
+        <label for="mobile" class="bold-text">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" placeholder="Enter mobile number..."><br>
+        <label for="email" class="bold-text">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter email..."><br>
+      </form>
+      </div>
+    </div>
+    <button class="w3-button w3-hover-black w3-card custom-background-colour w3-padding-large w3-large" style="border-radius: 10px; font-weight:bold; margin-left:17px;">SUBMIT</button>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container container w3-card">
+  <div id="subsection1" class="subsection w3-margin w3-center w3-card" style="border-radius: 30px; background-image:url('gradient.png')">
+    <h1 class="bold-text">Who We Are</h1>
+    <h5 class="w3-padding-16 subsection-justify">We are a passionate team of scientists, staff, and members dedicated to advancing conservation efforts in over 70 countries, committed to making a lasting impact. </h5>
+
+    <p class="w3-text-black subsection-justify">Our collective mission is to protect and preserve the rich biodiversity of our planet, ensuring the well-being of both wildlife and ecosystems for generations to come. Through extensive research, innovative initiatives, and strategic collaborations, we strive to address the pressing environmental challenges that threaten our planet. Our team of experts combines scientific expertise with practical solutions to develop and implement conservation strategies that make a tangible difference on the ground.</p>
+  </div>
+  <div id="subsection2" class="subsection w3-left w3-margin w3-center w3-card" style="border-radius: 30px; background-image:url('gradient.png');">
+    <h1 class="bold-text">What We Do</h1>
+    <h5 class="w3-padding-16 subsection-justify">To maximize our impact on the climate and biodiversity crises by 2030, we prioritize breakthrough ideas, empower local leaders, and influence policy at all levels.</h5>
+
+    <p class="w3-text-black subsection-justify">Central to our approach is the recognition that our individual and collective actions contribute to the larger environmental picture. As part of our commitment to transparency and accountability, we have developed a powerful tool: our team's carbon footprint calculator. This innovative tool enables individuals, organizations, and communities to assess and understand their carbon emissions, empowering them to make informed choices and take effective action to reduce their environmental impact. </p>
+  </div>
+  <div id="subsection3" class="subsection w3-center w3-margin w3-card w3-m" style="border-radius: 30px; background-image: url('gradient.png');">
+    <h1 class="bold-text">How You Can Help</h1>
+    <h5 class="w3-padding-16 subsection-justify">There are indeed numerous ways to make a positive change for our planet, and we wholeheartedly invite you to join us in our efforts.</h5>
+
+    <p class="w3-text-black subsection-justify">Our commitment to reducing carbon footprints aligns with our overarching goal of mitigating climate change. By engaging with our carbon footprint calculator, you can gain valuable insights into the environmental impact of your daily activities and make informed choices to reduce your carbon emissions. The calculator will guide you through a comprehensive assessment, highlighting areas where you can make significant changes, such as adopting energy-efficient practices, reducing waste, and embracing sustainable transportation options. Together, we can make a substantial collective impact by taking steps towards a low-carbon lifestyle.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center custom-background-colour">  
+</footer>
+
+<script>
+
+// Defining the modal elements
+const modalContainer = document.getElementById('modalContainer');
+const openModalBtn = document.getElementById('trigger-modal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+// Event listener for when registration button is clicked
+openModalBtn.addEventListener('click', () => {
+  modalContainer.style.display = 'block';
+});
+
+// Event listener for when user wants to leave the modal popup
+window.addEventListener('click', (event) => {
+  if (event.target == modalContainer) {
+    modalContainer.style.display = 'none';
+  }
+});
+
+// Even listener for when the user clicks the 'X' button to close the modal popup
+closeModalBtn.addEventListener('click', () => {
+  modalContainer.style.display = 'none';
+});
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
